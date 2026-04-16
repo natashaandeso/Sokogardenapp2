@@ -4,11 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
 import com.loopj.android.http.RequestParams
 
 class MainActivity : AppCompatActivity() {
@@ -35,6 +37,20 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, Signin::class.java)
             startActivity(intent)
         }
+
+//        find the recycler view and the progress bar by use o their id
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        val progressbar = findViewById<ProgressBar>(R.id.progressbar)
+
+//        specify the Api URL endpoint for fetching the products (alwaysData)
+        val url = "https://tashaandeso.alwaysdata.net/api/get_products"
+
+//import the helper class
+        val helper = ApiHelper(applicationContext)
+
+//        inside of the helper class access the function loadproducts
+        helper.loadProducts(url, recyclerView, progressbar)
+
 
 
     }
