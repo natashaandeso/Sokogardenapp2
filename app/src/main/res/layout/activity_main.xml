@@ -63,9 +63,10 @@
             android:text="👤 Signup"
             android:textSize="25sp"
             android:padding="10dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="4dp"
             android:layout_marginTop="8dp"
             android:textColor="#234"
+            android:layout_weight="1"
             android:backgroundTint="#555F91C8"
             android:id="@+id/signupBtn"/>
 
@@ -75,12 +76,25 @@
             android:text="👨‍💼 Signin"
             android:textSize="25sp"
             android:padding="10dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="4dp"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:textColor="#234"
             android:backgroundTint="#555F91C8"
             android:id="@+id/signinBtn"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 📜 About"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:textColor="#234"
+            android:backgroundTint="#555F91C8"
+            android:id="@+id/aboutBtn"/>
 
     </LinearLayout>
 

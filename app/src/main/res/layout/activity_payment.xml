@@ -58,16 +58,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"/>
 
-<!--            Below is a text view for product description-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtProductdescription"
-                android:text="Product description"
-                android:textSize="24sp"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold|italic"
-                android:textColor="#5D3239"/>
+
 
 <!--            Below is the textView for the product_cost-->
            <TextView
@@ -80,6 +71,17 @@
                android:textStyle="bold"
                android:textColor="#59caa1"
                android:fontFamily="sans-serif-condensed-light"/>
+
+            <!--            Below is a text view for product description-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProductdescription"
+                android:text="Product description"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold|italic"
+                android:textColor="#5D3239"/>
 
 <!--            Below is editText for entering mobile number-->
             <EditText
