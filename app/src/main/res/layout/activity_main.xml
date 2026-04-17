@@ -20,6 +20,37 @@
         android:textSize="45sp"
         android:textStyle="bold|italic" />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#AA78D7"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 🎀Welcome To SokoGarden🎀"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:textColor="#000"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
 <!--    Below is a linear layout that aligns contents horizontally-->
     <LinearLayout
         android:layout_width="match_parent"
